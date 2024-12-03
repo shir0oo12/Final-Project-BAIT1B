@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="x-icon" href="wizard.jpg">
+    <title>Sign Up</title>
+    <style>
+    body {
+  background-image: url("light.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.register-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(239, 229, 245, 0.8); 
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 300px; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+
+input, select, button {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+input[type="submit"],
+button {
+  background: none;
+  border: none;
+  color: #7122a5;
+  font-family: 'Comic Sans MS', sans-serif;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background: #7122a5;
+  color: beige;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.gender-flexbox {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+h2, h3 {
+  color: #11001c;
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  margin-top: 3px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #7122a5;
+  text-align: center;
+}
+
+a:hover {
+  color: beige;
+}
+    </style>
+  </head>
+  <body>
+    <div class="register-container">
+      <div class="register-flexbox">
+        <form action="login.html">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="password" placeholder="Password" required />
+          <h2>Birthday:</h2>
+          <input type="date" required />
+          <h2>Region:</h2>
+          <select>
+            <option selected="selected" required>Select region</option>
+            <option value="1">Australia</option>
+            <option value="2">Asia</option>
+            <option value="3">Africa</option>
+            <option value="4">Central America</option>
+            <option value="5">Europe</option>
+          </select>
+          <h2>Gender:</h2>
+          <div class="gender-flexbox">
+            <input type="radio" name="gender" required />
+            <h3>Male</h3>
+            <input type="radio" name="gender" />
+            <h3>Female</h3>
+            <input type="radio" name="gender" />
+            <h3>Other</h3>
+          </div>
+          <input type="submit" />
+        </form>
+        <a href="login.html">
+          <button>Back to Login</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

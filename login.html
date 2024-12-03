@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="x-icon" href="wizard.jpg">
+    <title>Domain</title>
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('hm.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.log{
+  text-align: center;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #11001c;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-flexbox {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+form {
+  background-color: rgba(225, 198, 241, 0.8); 
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  flex-direction: column; 
+  width: 300px; 
+}
+
+input,
+button {
+  font-size: 2rem;
+}
+
+input[type="submit"],
+button {
+  background: none;
+  border: none;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #7122a5;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background: #7122a5;
+  color: beige;
+}
+
+/* Style the buttons within the form */
+form button {
+  margin-top: 10px; 
+}
+
+/* Style the last button (Clear) */
+form button:last-child {
+  margin-right: 10px; 
+}
+
+/* Sign Up button */
+/* Container adjustments */
+.login-flexbox {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+/* Sign Up button */
+.login-flexbox a {
+  margin-top: 10px; 
+  text-align: center;
+}
+
+.login-flexbox a button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #7122a5;
+  color: beige;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-flexbox a button:hover {
+  background-color: #5b1d84; /* Slightly darkerhover */
+}
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-flexbox">
+        <form action="index.html">
+          <h1 class="log">⋆.˚ LOG-IN ⟡ ࣪ ˖ </h1>
+          <input type="text" placeholder="⋆⭒˚username⋆⭒˚" required />
+          <input type="password" placeholder="⋆⭒˚password⋆⭒˚" required />
+          <input type="submit" value="₊⊹Login₊⊹" />
+          <button type="reset">₊⊹Clear₊⊹</button>
+        </form>
+        <a href="register.html">
+          <button>Sign Up</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
