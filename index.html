@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Expense Tracker</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Fortuna</h1>
+        <button id="dark-mode-toggle" class="toggle-btn">🌙 Dark Mode</button>
+        <form id="expense-form">
+            <input type="text" id="description" placeholder="What did you buy? 🛍️" required>
+            <input type="number" id="amount" placeholder="How much? 💸" required>
+            <input type="date" id="date" required>
+            <button type="submit">Add Expense ✨</button>
+        </form>
+        <h2>Your Expenses </h2>
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Expenses will appear here -->
+            </tbody>
+        </table>
+        <div class="total">
+            <strong>Total Spent:</strong> <span id="total-amount">0</span> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

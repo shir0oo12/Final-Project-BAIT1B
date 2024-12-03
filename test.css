@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+    background: linear-gradient(135deg, #F1F0E8, #89A8B2);
+    color: #333;
+}
+
+body.dark {
+    background: linear-gradient(135deg, #433878, #7E60BF);
+    color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: var(--container-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px #9B7EBD(0, 0, 0, 0.15);
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Light and Dark Mode Variables */
+body.light {
+    --container-bg: #F1F0E8;
+    --table-bg: #F1F0E8;
+    --btn-bg: #89A8B2;
+    --btn-hover-bg: #B3C8CF;
+    --table-border: #E5E1DA;
+}
+
+body.dark {
+    --container-bg: #433878;
+    --table-bg: #7E60BF;
+    --btn-bg: #FFE1FF;
+    --btn-hover-bg: #E4B1F0;
+    --table-border: #FFE1FF;
+}
+
+/* Buttons */
+form input, form button, .toggle-btn {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid var(--table-border);
+    border-radius: 12px;
+    outline: none;
+}
+
+form button, .toggle-btn {
+    background: var(--btn-bg);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover, .toggle-btn:hover {
+    background: var(--btn-hover-bg);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid var(--table-border);
+}
+
+table th {
+    background: var(--table-bg);
+    color: #333;
+}
+
+table td {
+    background: #fff;
+}
+
+/* Dark Mode Table Adjustments */
+body.dark table td {
+    background: #3c3c44;
+    color: #f4f4f4;
+}
+
+.total {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
