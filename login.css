@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fef1f1; /* Soft pastel pink */
+}
+
+.auth-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid #ffccff; /* Soft pink border */
+}
+
+/* Heading */
+.auth-container h1 {
+    color: #ff6f61; /* Soft coral color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Form Inputs */
+.auth-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 2px solid #ff6f61;
+    border-radius: 12px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Input Focus Effects */
+.auth-container input:focus {
+    box-shadow: 0 0 8px rgba(255, 105, 97, 0.8);
+}
+
+/* Button */
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #E4B1F0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Button Hover Effects */
+.auth-container button:hover {
+    background-color: #FFE1FF;
+    transform: translateY(-3px);
+}
+
+/* Error Message */
+.error-message {
+    color: #884dff; /* Soft red for error messages */
+    margin-top: 10px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+/* Link Styling */
+.auth-container p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.auth-container a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Animation on Load */
+.auth-container {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Keyframe for Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

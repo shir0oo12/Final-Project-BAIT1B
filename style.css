@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+    background: var(--container-bg);
+    color: var(--text-light);
+}
+
+body.dark {
+    background: var(--container-bg);
+    color: var(--text-dark);
+}
+
+/* Header Navigation */
+header {
+    background: var(--nav-bg);
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.logout-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#dark-mode-toggle:hover {
+    background:  #a6c1ee;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#dark-mode-toggle .icon {
+    font-size: 1.2rem;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--container-bg);
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: -10px 0 20px 0;
+}
+
+/* Expense Form */
+.expense-form-section {
+    margin-bottom: 30px;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid var(--input-border);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+    border-color: var(--button-bg);
+    box-shadow: 0 0 5px var(--button-bg);
+}
+
+form button {
+    background: var(--button-bg);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+/* Expenses Table */
+.expense-table-section {
+    margin-bottom: 20px;
+}
+
+#expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--container-bg);
+}
+
+#expense-table thead th {
+    text-align: left;
+    padding: 12px;
+    background: var(--nav-bg);
+    color: #fff;
+}
+
+#expense-table tbody tr:nth-child(even) {
+    background: var(--container-alt-bg);
+}
+
+#expense-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid var(--input-border);
+}
+
+/* Total Section */
+.total-section {
+    text-align: center;
+}
+
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: var(--button-bg);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--nav-bg);
+    color: #fff;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Variables */
+body.light {
+    --container-bg: #E5E1DA;
+    --container-alt-bg: #f9f9f9;
+    --nav-bg: #89A8B2;
+    --button-bg: #B3C8CF;
+    --button-hover-bg: #B3C8CF;
+    --input-border: #ccc;
+    --text-light: #333;
+    --text-muted: #777;
+}
+
+body.dark {
+    --container-bg: #5A639C;
+    --container-alt-bg: #333344;
+    --nav-bg: #1c1c2b;
+    --button-bg: #7776B3;
+    --button-hover-bg: #E4B1F0;
+    --input-border: #555;
+    --text-dark: #f4f4f4;
+    --text-muted: #999;
+}

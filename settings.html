@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortuna | Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Tracker</a>
+            <a href="settings.html" class="active">⚙️ Settings</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>⚙️ Settings</h1>
+        <form id="settings-form">
+            <label>
+                Dark Mode:
+               <!-- Dark Mode Toggle Button -->
+                <button id="dark-mode-toggle">
+                <span class="icon">🌙</span>
+                <span class="icon">☀️</span>
+                <span>Dark Mode</span>
+            </button>
+
+            </label>
+            <label>
+                Default Currency:
+                <select id="currency-select">
+                    <option value="PHP" selected>PHP (₱)</option>
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                </select>
+            </label>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
