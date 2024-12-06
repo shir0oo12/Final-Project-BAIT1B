@@ -10,33 +10,33 @@
     <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
     <header>
         <nav>
-            <a href="index.html" class="active">♡ My Tracker</a>
+            <a href="index.html" class="active">Fortuna ♡ My Tracker</a>
             <a href="settings.html">⢰ Settings</a>
-            <button id="logout-btn" class="logout-btn">Log Out</button>
+            <button id="logout-btn" class="logout-btn">Log Out :<</button>
         </nav>
     </header>
 
     <main class="container">
-        <h1>My Expenses</h1>
+        <h1> My Expenses</h1>
         
         <section class="expense-form-section">
             <form id="expense-form">
                 <div class="form-group">
-                    <input type="text" id="description" placeholder="What did you buy? 🛍️" required>
+                    <input type="text" id="description" placeholder="What did you buy?" required>
                 </div>
                 <div class="form-group">
-                    <input type="number" id="amount" placeholder="How much? 💸" required>
+                    <input type="number" id="amount" placeholder="How much?" required>
                 </div>
                 <div class="form-group">
                     <input type="date" id="date" required>
                 </div>
-                <button type="submit" class="btn-primary">Add Expense ✨</button>
+                <button type="submit" class="btn-primary">Add Expense!</button>
             </form>
         </section>
 
         <!-- Expenses Table -->
         <section class="expense-table-section">
-            <h2>Your Expenses</h2>
+            <h2>My Expenses</h2>
             <table id="expense-table">
                 <thead>
                     <tr>
@@ -54,25 +54,13 @@
         <!-- Total Section -->
         <section class="total-section">
             <div class="total">
-                <strong>Total Spent:</strong> <span id="total-amount">₱0</span>
+                <strong>Total Spent:</strong> <span id="total-amount">0</span>
             </div>
         </section>
         <!-- Monthly Expenses Chart -->
         <div class="chart-container">
             <canvas id="monthlyExpensesChart" width="400" height="200"></canvas>
         </div>
-
-        <div class="expense-form">
-            <h2>Add Expense</h2>
-            <form id="expense-form">
-                <label for="month">Month:</label>
-                <input type="text" id="month" placeholder="Month" required>
-                
-                <label for="amount">Amount (₱):</label>
-                <input type="number" id="amount" placeholder="Amount" required>
-                
-                <button type="submit">Add Expense</button>
-            </form>
         </div>
     </main>
 

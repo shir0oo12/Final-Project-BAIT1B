@@ -17,26 +17,28 @@
     <main class="container">
         <h1>⚙️ Settings</h1>
         <form id="settings-form">
-            <label>
-                Dark Mode:
-               <!-- Dark Mode Toggle Button -->
-                <button id="dark-mode-toggle">
-                <span class="icon">🌙</span>
-                <span class="icon">☀️</span>
-                <span>Dark Mode</span>
-            </button>
+            <!-- Dark Mode -->
+            <div class="form-group">
+                <label for="dark-mode-toggle">Dark Mode:</label>
+                <button type="button" id="dark-mode-toggle" class="toggle-btn">
+                    🌙 <span id="dark-mode-text">Enable</span>
+                </button>
+            </div>
 
-            </label>
-            <label>
-                Default Currency:
+            <!-- Default Currency -->
+            <div class="form-group">
+                <label for="currency-select">Default Currency:</label>
                 <select id="currency-select">
                     <option value="PHP" selected>PHP (₱)</option>
                     <option value="USD">USD ($)</option>
                     <option value="EUR">EUR (€)</option>
+                    <option value="JPY">JPY (¥)</option>
+                    <option value="GBP">GBP (£)</option>
                 </select>
-            </label>
+            </div>
         </form>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>

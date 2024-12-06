@@ -7,9 +7,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fef1f1; /* Soft pastel pink */
+    background-color: #E5E1DA; /* Light mode background color */
 }
+body {
+    background-image: url("bg.jpg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
+/* Authentication Container */
 .auth-container {
     max-width: 400px;
     width: 100%;
@@ -19,12 +29,12 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
     text-align: center;
     font-size: 1.1rem;
-    border: 1px solid #ffccff; /* Soft pink border */
+    border: 1px solid #89A8B2; /* Light blue border */
 }
 
 /* Heading */
 .auth-container h1 {
-    color: #ff6f61; /* Soft coral color */
+    color: #89A8B2;  /* Light blue color */
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 700;
@@ -37,7 +47,7 @@ body {
     padding: 12px;
     margin: 10px 0;
     font-size: 1rem;
-    border: 2px solid #ff6f61;
+    border: 2px solid #89A8B2; /* Light blue border for input */
     border-radius: 12px;
     outline: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -46,7 +56,7 @@ body {
 
 /* Input Focus Effects */
 .auth-container input:focus {
-    box-shadow: 0 0 8px rgba(255, 105, 97, 0.8);
+    box-shadow: 0 0 8px rgba(137, 168, 178, 0.8); /* Light blue focus */
 }
 
 /* Button */
@@ -56,7 +66,7 @@ body {
     font-size: 1.2rem;
     border: none;
     border-radius: 12px;
-    background-color: #E4B1F0;
+    background-color: #B3C8CF; /* Light blue button background */
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s;
@@ -64,13 +74,13 @@ body {
 
 /* Button Hover Effects */
 .auth-container button:hover {
-    background-color: #FFE1FF;
+    background-color: #89A8B2; /* Darker blue on hover */
     transform: translateY(-3px);
 }
 
 /* Error Message */
 .error-message {
-    color: #884dff; /* Soft red for error messages */
+    color: #DC3545; /* Red for error messages */
     margin-top: 10px;
     font-size: 0.9rem;
     display: none;
@@ -83,7 +93,7 @@ body {
 }
 
 .auth-container a {
-    color: #ff6f61;
+    color: #89A8B2; /* Light blue link */
     text-decoration: none;
     font-weight: bold;
 }
